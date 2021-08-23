@@ -1,0 +1,14 @@
+include: "./rules/preprocessing.smk"
+include: "./rules/assembly.smk"
+include: "./rules/evaluation.smk"
+
+SAMPLES, = glob_wildcards("data/{sample}_R1_001.fastq.gz")
+
+rule all:
+    input:
+        expand("results/{sample}/assembly_stats_spades.txt", sample=SAMPLES),
+        expand("results/{sample}/assembly_stats_megahit.txt", sample=SAMPLES),
+        expand("results/{sample}/covhist_spades.txt", sample=SAMPLES),
+        expand("results/{sample}/covhist_megahit.txt", sample=SAMPLES),
+        expand("results/{sample}/covstats_spades.txt", sample=SAMPLES),
+        expand("results/{sample}/covstats_megahit.txt", sample=SAMPLES)

@@ -1,0 +1,4 @@
+data/*
+workflow/.snakemake/*
+results/*
+.snakemake/*
