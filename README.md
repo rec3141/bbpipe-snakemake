@@ -1,17 +1,24 @@
 # bbpipe Snakemake
+
 Make sure that you put the data you want to use in `./data/` before running.
-## To run:
+
+## To run
+
 - Run `snakemake --cores [number of threads to use] --use-conda`.
-## To use with Slurm job scheduler: 
-- Get access to cookiecutter:
-  -  `conda install -c conda-forge cookiecutter`
+
+## To use with Slurm job scheduler
+
+- Get access to cookiecutter
+  - `conda install -c conda-forge cookiecutter`
 - Create config:
   - `mkdir -p ~/.config/snakemake`
   - `cd ~/.config/snakemake`
   - `cookiecutter https://github.com/Snakemake-Profiles/slurm.git`
-- Modify `~/.config/snakemake/[profile name]/config.yaml` to your preferences. 
+- Modify `~/.config/snakemake/[profile name]/config.yaml` to your preferences.
+
 For instance:
-```
+
+```yaml
 restart-times: 3
 jobscript: "slurm-jobscript.sh"
 cluster: "slurm-submit.py"
@@ -26,9 +33,11 @@ jobs: 10
 rerun-incomplete: True
 printshellcmds: True
 ```
-- Create `~/.config/snakemake/[profile name]/cluster_config.yml` and fill with default resources.
-For example:
-```
+
+- Create `~/.config/snakemake/[profile name]/cluster_config.yml` and fill with
+default resources. For example:
+
+```yaml
 __default__:
         account: def-rec3141  # your account
         partition: skylake    # the partition you use
