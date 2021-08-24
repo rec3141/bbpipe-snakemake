@@ -35,7 +35,6 @@ snakemake --restart-times 3 --cores all --use-conda --keep-going --rerun-incompl
   - `cd ~/.config/snakemake`
   - `cookiecutter https://github.com/Snakemake-Profiles/slurm.git`
 - Modify `~/.config/snakemake/[profile name]/config.yaml` to your preferences.
-
 For instance:
 
 ```yaml
