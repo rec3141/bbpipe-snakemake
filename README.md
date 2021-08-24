@@ -5,7 +5,9 @@ Results will appear in `./results`.
 
 ## To run
 
-- Run `snakemake --cores [number of threads to use] --use-conda`.
+```sh
+snakemake --cores [number of threads to use] --use-conda
+```
 
 ## To schedule with Slurm as one task
 
@@ -25,7 +27,11 @@ Results will appear in `./results`.
 snakemake --restart-times 3 --cores all --use-conda --keep-going --rerun-incomplete
 ```
 
-- Run `sbatch ./runscript.sh`.
+###### Schedule
+
+```sh
+sbatch ./runscript.sh
+```
 
 ## To run with Slurm
 
