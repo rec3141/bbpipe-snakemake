@@ -8,7 +8,7 @@ Make sure that you put the data you want to use in `./data/` before running.
 
 ## To schedule with Slurm as one task
 
-- Change parameters in `runscript.sh` to your preferences. Defaults are
+- Change sbatch parameters in `runscript.sh` to your preferences. Defaults are
 
 ```sh
 #SBATCH --time=480:00
@@ -17,6 +17,9 @@ Make sure that you put the data you want to use in `./data/` before running.
 #SBATCH --cpus-per-task=24
 #SBATCH --mem=16G
 ```
+
+- Change snakemake flags in `runscript.sh` to your preferences. Defaults are
+`snakemake --restart-times 3 --cores all --use-conda --keep-going --rerun-incomplete`.
 
 - Run `sbatch ./runscript.sh`.
 
