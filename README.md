@@ -6,7 +6,21 @@ Make sure that you put the data you want to use in `./data/` before running.
 
 - Run `snakemake --cores [number of threads to use] --use-conda`.
 
-## To use with Slurm job scheduler
+## To schedule with Slurm
+
+- Change parameters in `runscript.sh` to your preferences. Defaults are
+
+```sh
+#SBATCH --time=480:00
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=24
+#SBATCH --mem=16G
+```
+
+- Run `sbatch ./runscript.sh`.
+
+## To run with Slurm
 
 - Get access to cookiecutter
   - `conda install -c conda-forge cookiecutter`
