@@ -1,6 +1,7 @@
 # bbpipe Snakemake
 
-Make sure that you put the data you want to use in `./data/` before running.
+Make sure that you put the data you want to use in `./data` before running. 
+Results will appear in `./results`.
 
 ## To run
 
