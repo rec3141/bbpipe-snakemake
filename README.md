@@ -6,7 +6,7 @@ Make sure that you put the data you want to use in `./data/` before running.
 
 - Run `snakemake --cores [number of threads to use] --use-conda`.
 
-## To schedule with Slurm
+## To schedule with Slurm as one task
 
 - Change parameters in `runscript.sh` to your preferences. Defaults are
 
