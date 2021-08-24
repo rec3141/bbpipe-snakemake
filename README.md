@@ -30,11 +30,19 @@ snakemake --restart-times 3 --cores all --use-conda --keep-going --rerun-incompl
 ## To run with Slurm
 
 - Get access to cookiecutter
-  - `conda install -c conda-forge cookiecutter`
+
+```sh
+conda install -c conda-forge cookiecutter
+```
+
 - Create config:
-  - `mkdir -p ~/.config/snakemake`
-  - `cd ~/.config/snakemake`
-  - `cookiecutter https://github.com/Snakemake-Profiles/slurm.git`
+
+```sh
+`mkdir -p ~/.config/snakemake`
+`cd ~/.config/snakemake`
+`cookiecutter https://github.com/Snakemake-Profiles/slurm.git`
+```
+
 - Modify `~/.config/snakemake/[profile name]/config.yaml` to your preferences.
 For instance:
 
