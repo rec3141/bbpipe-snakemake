@@ -21,7 +21,7 @@ Make sure that you put the data you want to use in `./data/` before running.
 - Change snakemake flags in `runscript.sh` to your preferences. Defaults are
 
 ```sh
-snakemake --restart-times 3 --cores all --use-conda --keep-going --rerun-incomplete`
+snakemake --restart-times 3 --cores all --use-conda --keep-going --rerun-incomplete
 ```
 
 - Run `sbatch ./runscript.sh`.
