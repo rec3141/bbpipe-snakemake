@@ -35,7 +35,7 @@ snakemake --restart-times 3 --cores all --use-conda --keep-going --rerun-incompl
   - `cd ~/.config/snakemake`
   - `cookiecutter https://github.com/Snakemake-Profiles/slurm.git`
 - Modify `~/.config/snakemake/[profile name]/config.yaml` to your preferences.
-For instance:
+For instance
 
 ```yaml
 restart-times: 3
@@ -54,7 +54,7 @@ printshellcmds: True
 ```
 
 - Create `~/.config/snakemake/[profile name]/cluster_config.yml` and fill with
-default resources. For example:
+default resources. For example
 
 ```yaml
 __default__:
