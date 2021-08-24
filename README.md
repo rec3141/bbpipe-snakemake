@@ -38,9 +38,9 @@ conda install -c conda-forge cookiecutter
 - Create config:
 
 ```sh
-`mkdir -p ~/.config/snakemake`
-`cd ~/.config/snakemake`
-`cookiecutter https://github.com/Snakemake-Profiles/slurm.git`
+mkdir -p ~/.config/snakemake
+cd ~/.config/snakemake
+cookiecutter https://github.com/Snakemake-Profiles/slurm.git
 ```
 
 - Modify `~/.config/snakemake/[profile name]/config.yaml` to your preferences.
