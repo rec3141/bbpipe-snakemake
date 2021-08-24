@@ -27,7 +27,7 @@ snakemake --cores [number of threads to use] --use-conda
 snakemake --restart-times 3 --cores all --use-conda --keep-going --rerun-incomplete
 ```
 
-###### Schedule
+### Schedule
 
 ```sh
 sbatch ./runscript.sh
