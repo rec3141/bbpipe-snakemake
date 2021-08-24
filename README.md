@@ -11,7 +11,7 @@ snakemake --cores [number of threads to use] --use-conda
 
 ## To schedule with Slurm as one task
 
-- Change sbatch parameters in `runscript.sh` to your preferences. Defaults are
+### Change sbatch parameters in `runscript.sh` to your preferences. Defaults are
 
 ```sh
 #SBATCH --time=480:00
@@ -21,7 +21,7 @@ snakemake --cores [number of threads to use] --use-conda
 #SBATCH --mem=16G
 ```
 
-- Change snakemake flags in `runscript.sh` to your preferences. Defaults are
+### Change snakemake flags in `runscript.sh` to your preferences. Defaults are
 
 ```sh
 snakemake --restart-times 3 --cores all --use-conda --keep-going --rerun-incomplete
