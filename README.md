@@ -1,3 +1,5 @@
+This package conducts quality control, assembly, mapping, and binning of Illumina metagenomic data using a Snakemake workflow.
+
 # bbpipe
 
 Make sure that you put the data you want to use in `./data` before running. 
